@@ -12,7 +12,7 @@ int main() {
 	for(auto start: value)
 	{
 	    if(start.second > 1)
-	    cout<<start.first<<" : "<<start.second<<" ";
+	    cout<<start.first<<" : "<<start.second<<endl;
 	}
 	return 0;
 }
