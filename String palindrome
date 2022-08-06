@@ -1,0 +1,13 @@
+	int isPalindrome(string S)
+	{
+	    // Your code goes here
+	    int n= S.size();
+	    int start = 0; int end = n-1;
+	    while(start<=end)
+	    {
+	        if(S[start]!=S[end])
+	        return 0;
+	        start++; end--;
+	    }
+	    return 1;
+	}
