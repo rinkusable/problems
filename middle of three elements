@@ -1,0 +1,36 @@
+METHOD 1
+ int middle(int A, int B, int C){
+      
+        if(A<B)
+        {
+            if(B<C)
+            return B;
+            else if(C<A)
+            return A;
+            else
+            return C;
+            
+        }
+        else
+        {
+            if(B>C)
+            return B;
+            else if(C>A)
+            return A;
+            else
+            return C;
+        }
+    }
+    
+    
+    METHOD 2
+      int middle(int A, int B, int C){
+        
+        int a=A, b=B, c=C;
+        if(a<b&b<c || a>b&b>c)
+        return b;
+        else if(a<c&c<b || a>c&c>b)
+        return c;
+        else
+        return a;
+    }
